@@ -18,16 +18,13 @@ MD_EXTENSIONS = [
     'tables',
 ]
 
-
 def slugify(s: str) -> str:
     s = s.lower()
     s = re.sub(r"[^a-z0-9-]+", "-", s)
     s = re.sub(r"-+", "-", s).strip("-")
     return s
 
-
 def read_articles():
-    """Read all markdown files in the content folder, parse frontmatter and render HTML. Returns list of articles sorted by date desc."""
     articles = []
     for md_file in CONTENT_DIR.glob("*.md"):
         post = frontmatter.load(md_file)
