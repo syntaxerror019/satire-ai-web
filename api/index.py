@@ -30,26 +30,17 @@ def read_articles():
         post = frontmatter.load(md_file)
         meta = post.metadata or {}
         title = meta.get('title') or md_file.stem
-        date_raw = meta.get('date') or md_file.stem.split('-')[0:3]
-        # try parse date; support iso or YYYY-MM-DD in filename
-        date = None
+        date_raw = meta.get('date')
+        
         if isinstance(date_raw, str):
-            for fmt in ("%Y-%m-%d", "%Y/%m/%d", "%Y-%m-%dT%H:%M:%S"):
-                try:
-                    date = datetime.strptime(date_raw, fmt)
-                    break
-                except Exception:
-                    date = None
-        if date is None:
-            # fallback: try to parse date from filename
-            try:
-                parts = md_file.stem.split('-')
-                if len(parts) >= 3:
-                    date = datetime(int(parts[0]), int(parts[1]), int(parts[2]))
-                else:
-                    date = datetime.fromtimestamp(md_file.stat().st_mtime)
-            except Exception:
-                date = datetime.fromtimestamp(md_file.stat().st_mtime)
+            date = datetime.fromisoformat(date_raw)
+        elif isinstance(date_raw, datetime):
+            date = date_raw
+        else:
+            date = datetime.now()
+        
+        print("DATE PARSED:", date)
+        print("DATE RAW:", date_raw)
 
         html = markdown.markdown(post.content, extensions=MD_EXTENSIONS)
         summary = meta.get('summary') or (post.content.split('\n', 1)[0][:200] + '...')
