@@ -27,6 +27,7 @@ Or add a requirements.txt with:
 
 ```
 flask
+requests
 python-frontmatter
 markdown
 pygments
