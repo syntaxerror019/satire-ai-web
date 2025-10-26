@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<article class="card shadow-sm">
+  <div class="card-body p-5">
+    <h1 class="fw-bold">{{ article.title }}</h1>
+    <div class="text-muted small mb-3">{{ article.date_str }} · {{ article.author }}</div>
+    {% if article.image %}
+      <img src="{{ article.image }}" class="w-100 rounded mb-4 object-fit-cover" alt="">
+    {% endif %}
+    <div class="article-content">{{ article.content_html|safe }}</div>
+    <div class="mt-4">
+      <a class="btn btn-outline-secondary btn-sm" href="/">Back to all stories</a>
+    </div>
+  </div>
+</article>
+{% endblock %}
