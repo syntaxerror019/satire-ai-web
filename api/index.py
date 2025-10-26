@@ -10,7 +10,7 @@ CONTENT_DIR = BASE / "content"
 
 app = Flask(__name__)
 
-# Markdown config
+# config
 MD_EXTENSIONS = [
     'fenced_code',
     'codehilite',
