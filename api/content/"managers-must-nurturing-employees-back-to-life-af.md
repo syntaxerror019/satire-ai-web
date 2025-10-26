@@ -1,5 +1,5 @@
 ---
-title: ""Managers Must Nurturing Employees Back To Life After Summer Break""
+title: "Managers Must Nurturing Employees Back To Life After Summer Break"
 date: 2025-10-26
 author: "Lexi Con"
 tags: [Fresh, News, World]
