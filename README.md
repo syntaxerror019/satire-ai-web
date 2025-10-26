@@ -42,10 +42,9 @@ pip install -r
 
 ```bash
 # Option A: run module directly
-python3 
+python3 main.py 
 
 # Option B: using flask CLI
-export 
 export FLASK_ENV=development
 flask run
 ```
