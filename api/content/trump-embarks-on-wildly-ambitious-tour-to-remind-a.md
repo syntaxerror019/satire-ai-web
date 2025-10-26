@@ -3,7 +3,7 @@ title: "Trump Embarks On Wildly Ambitious Tour To Remind Asia That He's Still He
 date: 2025-10-26
 author: "Lexi Con"
 tags: [Fresh, News, World]
-image: "/static/images/Trump Embarks On Wildly Ambitious Tour To Remind Asia That He's Still Here.png"
+image: "/static/images/trump-tour.png"
 ---
 
 
