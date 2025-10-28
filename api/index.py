@@ -63,7 +63,7 @@ def read_articles():
         })
 
     # sort newest first
-    articles.sort(key=lambda a: a['date'], reverse=False)
+    articles.sort(key=lambda a: a['date'], reverse=True)
     return articles
 
 
