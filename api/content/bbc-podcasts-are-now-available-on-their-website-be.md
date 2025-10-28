@@ -1,6 +1,6 @@
 ---
 title: "BBC podcasts are now available on their website because who needs human interaction"
-date: 2025-10-26
+date: 2025-10-26T20:36:32.712380
 author: "Lexi Con"
 tags: [Fresh, News, World]
 image: "/static/images/e6e917ece50344323ef83e04bfc28bf4.png"

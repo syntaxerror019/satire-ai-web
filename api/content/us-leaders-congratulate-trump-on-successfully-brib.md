@@ -1,6 +1,6 @@
 ---
 title: "US Leaders Congratulate Trump On Successfully Bribing Way Out Of Yet Another International Conflict"
-date: 2025-10-26
+date: 2025-10-26T20:36:32.712380
 author: "Lexi Con"
 tags: [Fresh, News, World]
 image: "/static/images/d4fab5aa0933c6f1a340c9dc1460bb06.png"

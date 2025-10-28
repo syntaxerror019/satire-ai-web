@@ -1,6 +1,6 @@
 ---
 title: "US And China Agree To Split Rare Earths Like They're Candy At A Birthday Party"
-date: 2025-10-26
+date: 2025-10-26T20:36:32.712380
 author: "Lexi Con"
 tags: [Fresh, News, World]
 image: "/static/images/06cd4276c65fb0759fed6b96075dfd45.png"

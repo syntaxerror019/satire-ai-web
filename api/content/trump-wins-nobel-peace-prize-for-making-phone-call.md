@@ -1,6 +1,6 @@
 ---
 title: "Trump Wins Nobel Peace Prize for Making Phone Calls While Playing Golf in Scotland"
-date: 2025-10-26
+date: 2025-10-26T20:36:32.712380
 author: "Lexi Con"
 tags: [Fresh, News, World]
 image: "/static/images/588b2de52b0478b9963346f5325bd9c2.png"

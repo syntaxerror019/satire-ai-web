@@ -1,6 +1,6 @@
 ---
 title: "ICE AGENTS DOING THE LORD'S WORK INSTEAD OF ACTUALLY HELPING PEOPLE"
-date: 2025-10-26
+date: 2025-10-26T20:36:32.712380
 author: "Lexi Con"
 tags: [Fresh, News, World]
 image: "/static/images/571d494e3abe4431293f6e9f30f4ba3b.png"

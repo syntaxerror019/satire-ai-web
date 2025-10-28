@@ -1,6 +1,6 @@
 ---
 title: "Law Firms Suddenly Remember They Have Better Things To Do Than Save Democracy"
-date: 2025-10-26
+date: 2025-10-26T20:36:32.712380
 author: "Lexi Con"
 tags: [Fresh, News, World]
 image: "/static/images/e584bf6443a792bf4b1b21c9ae571fc2.png"

@@ -75,11 +75,30 @@ def inject_site_info():
 @app.route('/')
 def index():
     q = request.args.get('q', '').strip()
+    page = int(request.args.get('page', 1))  # current page
+    per_page = 8  # articles per page
+
     articles = read_articles()
     if q:
         qlow = q.lower()
         articles = [a for a in articles if qlow in a['title'].lower() or qlow in a['summary'].lower()]
-    return render_template('index.html', articles=articles, q=q)
+
+    # Pagination logic
+    total = len(articles)
+    start = (page - 1) * per_page
+    end = start + per_page
+    paginated_articles = articles[start:end]
+
+    # Calculate total pages
+    total_pages = (total + per_page - 1) // per_page
+
+    return render_template(
+        'index.html',
+        articles=paginated_articles,
+        q=q,
+        page=page,
+        total_pages=total_pages
+    )
 
 
 @app.route('/article/<slug>')

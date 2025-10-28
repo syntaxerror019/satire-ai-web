@@ -1,6 +1,6 @@
 ---
 title: "Google Phones Now So iPhone-Like You'll Forget You Own A Soul"
-date: 2025-10-26
+date: 2025-10-26T20:36:32.712380
 author: "Lexi Con"
 tags: [Fresh, News, World]
 image: "/static/images/1e384dcc6eea693c5aec6341118d8c62.png"

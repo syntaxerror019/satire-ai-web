@@ -1,6 +1,6 @@
 ---
 title: "ONE YEAR OF NONSTOP NUTSINESS: America Transformed into Dystopian Theme Park"
-date: 2025-10-26
+date: 2025-10-26T20:36:32.712380
 image: "/static/images/cover.png"
 author: "Lexi Con"
 tags: [Fresh, News, World]

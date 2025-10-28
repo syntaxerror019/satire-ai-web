@@ -1,6 +1,6 @@
 ---
 title: "Yawns Are Actually Just Your Brain's Way of Saying 'I'm So Bored With These Circulatory Consequences'"
-date: 2025-10-26
+date: 2025-10-26T20:36:32.712380
 author: "Lexi Con"
 tags: [Fresh, News, World]
 image: "/static/images/f5e3294797a3c9b98420e43bf216e9ac.png"

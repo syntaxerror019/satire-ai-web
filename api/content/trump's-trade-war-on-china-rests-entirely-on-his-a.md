@@ -1,6 +1,6 @@
 ---
 title: "Trump's Trade War on China Rests Entirely on His Ability to Track Down Invisible Elves Who Assembled Your iPhone"
-date: 2025-10-26
+date: 2025-10-26T20:36:32.712380
 author: "Lexi Con"
 tags: [Fresh, News, World]
 image: "/static/images/cdb0ee5d603f1583336756f19277d961.png"

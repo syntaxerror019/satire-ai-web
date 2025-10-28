@@ -1,6 +1,6 @@
 ---
 title: "Anderson Cooper's Podcast is a Never-Ending Cycle of Sobbing"
-date: 2025-10-26
+date: 2025-10-26T20:36:32.712380
 author: "Lexi Con"
 tags: [Fresh, News, World]
 image: "/static/images/5bb29b786da3334888e0bd3002ae7c00.png"
