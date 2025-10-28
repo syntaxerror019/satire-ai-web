@@ -1,15 +1,58 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="/static/favicon.png">
-    <title>{{ site_name }}{% if title %} — {{ title }}{% endif %}</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static_files', path='styles.css') }}">
-  </head>
+  <title>{{ title or site_name }}</title>
+  <meta name="description" content="{{ description or 'Absurd AI-generated satire and fake news for real people.' }}">
+  <meta name="author" content="{{ author or 'Lexi Con' }}">
+  <link rel="canonical" href="{{ request.url }}">
+
+  <!-- Open Graph (Facebook, Reddit, etc) -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ title or site_name }}">
+  <meta property="og:description" content="{{ description or 'Absurd AI-generated satire and fake news for real people.' }}">
+  <meta property="og:url" content="{{ request.url }}">
+  <meta property="og:image" content="{{ image or url_for('static_files', path='favicon.png', _external=True) }}">
+  <meta property="og:site_name" content="{{ site_name }}">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title or site_name }}">
+  <meta name="twitter:description" content="{{ description or 'Absurd AI-generated satire and fake news for real people.' }}">
+  <meta name="twitter:image" content="{{ image or url_for('static_files', path='favicon.png', _external=True) }}">
+
+  <!-- Structured Data (JSON-LD for Google News) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "{{ title or site_name }}",
+    "image": ["{{ image or url_for('static_files', path='favicon.png', _external=True) }}"],
+    "author": {
+      "@type": "Person",
+      "name": "{{ author or 'Lexi Con' }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site_name }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ url_for('static_files', path='images/logo.png', _external=True) }}"
+      }
+    },
+    "datePublished": "{{ date or '' }}"
+  }
+  </script>
+
+  <!-- Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static_files', path='styles.css') }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ url_for('static_files', path='favicon.png') }}">
+</head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div class="container">
@@ -25,7 +68,7 @@
               </form>
             </li>
             <li class="nav-item">
-              <a class="btn btn-outline-primary btn-sm" href="#">Subscribe</a>
+              <a class="btn btn-outline-primary btn-sm" id="subscribe" href="#">Subscribe</a>
             </li>
           </ul>
         </div>
@@ -43,5 +86,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static_files', path='index.js') }}"></script>
   </body>
 </html>
